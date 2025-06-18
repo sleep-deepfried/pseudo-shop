@@ -3,7 +3,14 @@
 #In-memory database for users
 user_database = []
 
-#function create_user(name, email, password)
-
+# Function to create a new user and add them to the database
+function create_user(name, email, password):
+    new_user = {
+        "name": name,
+        "email": email,
+        "password": password 
+    }
+    user_database.append(new_user)
+    print "User " + name + " created successfully.
 # function login_user(email, password)
 
