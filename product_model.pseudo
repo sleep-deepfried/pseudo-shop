@@ -17,3 +17,11 @@ product_list = [
     {"id": 2, "name": "Denim Jeans", "price": 40.00, "brand": "StyleJeans", "color": "Black", "width": 32, "height": 34, "length": 2, "weight": 1.5}
 ]
 
+#Function to Add product
+function add_product(id, name, price, brand, color, width, height, length, weight):
+    new_product = {
+        "id": id, "name": name, "price": price, "brand": brand, "color": color,
+        "width": width, "height": height, "length": length, "weight": weight
+    }
+    product_list.append(new_product)
+    print "Product '" + name + "' added."
