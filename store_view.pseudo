@@ -2,7 +2,7 @@
 
 # Function to display all products in the storefront
 function display_products(products_to_display):
-    print "--- Welcome to the Pseudo-Shop! ---"
+    print "--- Now Showing All Available Items ---" # Changed Line
     for each product in products_to_display:
         print "----------------------------------------"
         print "Name: " + product.name
