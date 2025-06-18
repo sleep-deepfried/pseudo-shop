@@ -1,0 +1,10 @@
+# Filters the product list based on attributes
+function filter_products(filters):
+    filtered_list = product_list
+    if "color" in filters:
+        filtered_list = [p for p in filtered_list if p.color == filters.color]
+    if "brand" in filters:
+        filtered_list = [p for p in filtered_list if p.brand == filters.brand]
+    if "max_price" in filters:
+        filtered_list = [p for p in filtered_list if p.price <= filters.max_price]
+    return filtered_list
