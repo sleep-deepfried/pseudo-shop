@@ -25,3 +25,6 @@ function add_product(id, name, price, brand, color, width, height, length, weigh
     }
     product_list.append(new_product)
     print "Product '" + name + "' added."
+
+# Demonstrate adding a product
+add_product(3, "Leather Wallet", 25.00, "PseudoBrand", "Brown", 8, 4, 1, 0.4)
