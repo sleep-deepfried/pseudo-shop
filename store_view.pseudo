@@ -2,7 +2,8 @@
 
 # Function to display all products in the storefront
 function display_products(products_to_display):
-    print "--- Our Awesome Pseudo-Shop Products ---"
+    # This is our combined, resolved header
+    print "✨✨ Welcome to the All-New Pseudo-Shop! ✨✨"
     for each product in products_to_display:
         print "----------------------------------------"
         print "Name: " + product.name
@@ -11,3 +12,14 @@ function display_products(products_to_display):
         print "Dimensions (WxHxL): " + product.width + "x" + product.height + "x" + product.length
         print "Weight: " + product.weight + " lbs"
     print "----------------------------------------"
+
+# Demonstrate filtering
+# first, get all products from the model
+all_products = product_list
+# define a filter
+blue_filter = {"color": "Blue"}
+# get filtered items
+blue_products = filter_products(blue_filter)
+# display them
+print "\n--- Showing only BLUE products ---"
+display_products(blue_products)
