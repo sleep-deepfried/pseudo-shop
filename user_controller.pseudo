@@ -12,5 +12,12 @@ function create_user(name, email, password):
     }
     user_database.append(new_user)
     print "User " + name + " created successfully.
-# function login_user(email, password)
 
+# Function to log in a user
+function login_user(email, password):
+    for user in user_database:
+        if user.email == email and user.password == password:
+            print "Login successful for " + user.name
+            return true
+    print "Login failed: Invalid email or password."
+    return false
