@@ -1,5 +1,7 @@
 # Displays product listings
 
-# Placeholder function:
-# function display_products()
-
+# Function to display all products in the storefront
+function display_products(products_to_display):
+    print "--- Welcome to the Pseudo-Shop! ---"
+    for each product in products_to_display:
+        print "Name: " + product.name + ", Price: $" + product.price
