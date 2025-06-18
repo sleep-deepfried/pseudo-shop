@@ -11,6 +11,9 @@
 #     brand: "Generic"
 # }
 
-# Placeholder product list
-product_list = []
+# In-memory database for products
+product_list = [
+    {"id": 1, "name": "Classic T-Shirt", "price": 15.00, "brand": "PseudoBrand", "color": "Blue", "width": 18, "height": 28, "length": 1, "weight": 0.5},
+    {"id": 2, "name": "Denim Jeans", "price": 40.00, "brand": "StyleJeans", "color": "Black", "width": 32, "height": 34, "length": 2, "weight": 1.5}
+]
 
